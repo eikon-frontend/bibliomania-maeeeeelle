@@ -5,7 +5,7 @@
   .entete {
     position: fixed;
     height: 120px;
-    width: 414px;
+    width: 100%;
     display: flex;
     background-color: #D9D9D9;
     justify-content: center;
