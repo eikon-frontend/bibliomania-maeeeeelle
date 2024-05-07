@@ -1,32 +1,165 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bibliomania</title>
-    <link rel="stylesheet" href="scripts/star-rating.min.css" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- 🦊 Votre page ici -->
 
-    <!-- 💡 Décommentez cette balise et placez-la dans votre code afin d'afficher le système de note Javascript -->
-    <!-- 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bibliomania</title>
+  <link rel="stylesheet" href="scripts/star-rating.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="entete">
+    <div class="livree">
+      <img src="icone/livree.svg" alt="livre">
+    </div>
+  </div>
+  <div class="troll">
+    <div class="detailx">
+      <strong>Détails livre</strong>
+      <img class="croix" src="icone/croix.svg" alt="croix">
+    </div>
+    <div>
+      <div class="dejalu">
+        <div class="centre">
+          <div class="lu1">
+            <p>Déjà lu <img src="icone/vu.svg" alt="vu"></p>
+          </div>
+          <p class="barre">|</p>
+          <div class="lire1">
+            <p>À lire <img class="imglire" src="icone/orloge.svg"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="description">
+      <div class="am">
+        <img src="img/couvertures/manoir.jpg" alt="manoir">
         <select class="star-rating" aria-label="Note utilisateur">
-            <option value="">Select a rating</option>
-            <option value="5">Excellent</option>
-            <option value="4">Very Good</option>
-            <option value="3">Average</option>
-            <option value="2">Poor</option>
-            <option value="1">Terrible</option>
+          <option value="">Select a rating</option>
+          <option value="5">Excellent</option>
+          <option value="4">Very Good</option>
+          <option value="3">Average</option>
+          <option value="2">Poor</option>
+          <option value="1">Terrible</option>
         </select>
-    -->
-    <!-- 💡 Script pour gérer le rating d'un livre -->
-    <script src="scripts/star-rating.min.js"></script>
-    <script>
-      var stars = new StarRating(".star-rating", {
-        tooltip: "Choisissez votre note",
-      });
-    </script>
-  </body>
+      </div>
+      <div class="manour2">
+        <div class="titre"> <strong> Le manoir des histoires étranges</strong>
+          <div class="nom">Lionel Boulet</div>
+        </div>
+        <div class="genre">
+          <p>genre : <strong>horreur</strong></p>
+          <p>publication : <strong>2023</strong></p>
+        </div>
+        <div class="syno">
+          <p>Plongez dans ce recueil de 100 histoires vraies, de témoignages, d'expériences paranormales,
+            d'esprits, de
+            maisons hantées, ou encore d'ovnis, d'anecdotes inexplicables, de rites, de sorcellerie, de croyances, de
+            mythes...</p>
+        </div>
+      </div>
+    </div>
+    <div class="comcoeur">
+      <div class="boutoncom">
+        <div class="padding">
+          <p class="pad">Ajouter un commentaire</p>
+        </div>
+      </div>
+      <div class="image">
+        <img src="icone/coeur.svg" alt="like">
+      </div>
+    </div>
+    <div class="groupe">
+      <div class="commena">
+        <p><strong>Commentaires</strong></p>
+        <p class="avis">(25 avis)</p>
+      </div>
+      <div class="entier">
+        <div class="note">
+          <img src="./icone/star-filled.svg" alt="">
+          <img src="./icone/star-filled.svg" alt="">
+          <img src="./icone/star-filled.svg" alt="">
+          <img src="./icone/star-filled.svg" alt="">
+          <img src="./icone/star-outline.svg" alt="">
+        </div>
+        <div class="avecI">
+          <img class="round" src="./img/pdp.svg" alt="">
+          <div class="prinom">
+            <div class="prenom">
+              <p class="ok">Catherine</p>
+              <p class="metier">medecin</p>
+            </div>
+            <p class="bbb">Très bon livre</p>
+          </div>
+        </div>
+      </div>
+      <div class="entier">
+        <div class="note">
+          <img src="./icone/star-filled.svg" alt="">
+          <img src="./icone/star-filled.svg" alt="">
+          <img src="./icone/star-filled.svg" alt="">
+          <img src="./icone/moitie.svg" alt="">
+          <img src="./icone/star-outline.svg" alt="">
+        </div>
+        <div class="avecI">
+          <img class="round" src="./img/pdp.svg" alt="">
+          <div class="prinom">
+            <div class="prenom">
+              <p class="ok">Alex</p>
+              <p class="metier">informaticien</p>
+            </div>
+            <p class="bbb">Bien aimé la fin, mais trop long.</p>
+          </div>
+        </div>
+      </div>
+      <div class="entier">
+        <div class="note">
+          <img src="./icone/star-filled.svg" alt="">
+          <img src="./icone/moitie.svg" alt="">
+          <img src="./icone/star-outline.svg" alt="">
+          <img src="./icone/star-outline.svg" alt="">
+          <img src="./icone/star-outline.svg" alt="">
+        </div>
+        <div class="avecI">
+          <img class="round" src="./img/pdp.svg" alt="">
+          <div class="prinom">
+            <div class="prenom">
+              <p class="ok">Samuel</p>
+              <p class="metier">biologiste</p>
+            </div>
+            <p class="bbb">pas compris</p>
+          </div>
+        </div>
+      </div>
+      <div class="enbas">
+        <div class="voirplus">
+          <p class="plus">voir plus</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="navigation">
+    <img src="icone/home.png" alt="home">
+    <img src="icone/recherche.png" alt="recherche">
+    <img src="icone/profil.png" alt="profil">
+    <img src="icone/collection.png" alt="collection">
+  </div>
+  </div>
+
+  <!-- 💡 Script pour gérer le rating d'un livre -->
+  <script src="scripts/star-rating.min.js"></script>
+  <script>
+    var stars = new StarRating(".star-rating", {
+      tooltip: "Choisissez votre note",
+    });
+  </script>
+</body>
+
 </html>
